@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Estruturas Condicionais</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Estruturas Condicionais</h1>
+        <script>
+            var idade = 17;
+            if(idade >= 18){
+                console.log('Maior de idade');
+            }else{
+                console.log('Menor de idade');
+            }
+            if(idade <= 14){
+                console.log('Criança');
+            }else if(idade > 14 && idade < 18){
+                console.log('Adolescente');
+            }else{
+                console.log('Adulto');
+            }
+            // Verifica valor
+            if(1 == '1'){
+                console.log('Sim, são iguais')
+            }else{
+                console.log('Não')
+            }
+            // Verifica valor e tipo de dado
+            if(1 === '1'){
+                console.log('Sim, são iguais')
+            }else{
+                console.log('Não')
+            }
+
+            var sexo = 'f';
+
+            switch(sexo){
+                case 'm':
+                    console.log('Masculino');
+                    break;
+                case 'f':
+                    console.log('Feminino');
+                    break;
+                default:
+                   console.log('Outro');
+                    break;
+            }
+
+
+            var s = 'm';
+            var masculino;
+
+            if(s === 'm'){
+                masculino = true;
+            }else{
+                masculino = false;
+            }
+            console.log(masculino)
+
+            // simplificando
+            // var masc = (s === 'm');
+            var masc = s === 'f';
+            console.log(masc);
+
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Escopo de variáveis</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Escopo de variáveis</h1>
+        <script>
+            // variavel global
+            var teste = 42;
+            function somar(a, b){
+                // variavel local(só reconhecida dentro do bloco da funcao)
+                var valor = 5;
+                return valor + a + b;
+            }
+            console.log(somar(4, 6))
+
+            for(var i=0; i < 5; i++){
+                var outra = 4; // variável global
+                console.log(outra * i);
+            }
+            //console.log(valor)  // reference error
+            console.log(outra) // temos acesso pois foi declarada em um bloco for
+
+            for(var j = 1; j < 10; j++){
+                let num =10;
+                console.log(num * j);
+            }
+            console.log(num) // variavel local. não tem acesso no escopo global por ser let
+        </script>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Eventos inline</title>
+    </head>
+    <body onclick="mudarCor()">
+        <h1>Eventos Inline</h1><br><br>
+        <button onclick="mostrarAlerta();">Clique Aqui!</button><br><br>
+        <span class="info" onmouseover="mudarTexto(this);"><b>Atenção!!</b>Não clique no botão acima</span>
+        <br><br>
+        <input onkeyup="escreverTexto(this);"/>
+        <br><br>
+        <span id="texto"></span>
+        <script src="js/script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercícios JavaScript</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Exercícios JavaScript</h1>
+        <script>
+            // exercicio 1
+            var cliente_1 = {
+            nome: "Alison J. Ghedin",
+            email: "alisonj@gmail.com",
+            telefone: "545-1302",
+            endereco: "Av. Edmundo Amaral",
+            numero: 130,
+            complemento: "bloco 10 ap 111"
+            }
+            function info(cliente){
+                console.log("O cliente " + cliente.nome + " mora no endereço " + cliente.endereco + " numero " +cliente.numero + " " + cliente.complemento)
+            }
+            info(cliente_1)
+
+            // exercicio 2
+            function impares(a, b){
+                for(var num = a + 1; num < b; num++){
+                    if (num % 2 != 0) {
+                        console.log(num)
+                    }
+                }
+            }
+            impares(8, 15)
+
+            function experiencia(anos){
+                if (anos > 6){
+                    console.log("Senior");
+                }else{
+                    if(anos <= 2){
+                        console.log("Junior");
+                    }else{
+                        console.log("Pleno");
+                    }
+                }
+            }
+
+            experiencia(6)
+        </script>
+    </body>
+</html>
