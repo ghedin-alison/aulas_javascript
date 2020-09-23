@@ -20,3 +20,11 @@ exemplo no terminal: yarn add @babel/cli -D (essse comando instala o babel /cli(
 
 Vai criar o yarn.lock - arquivo de cache do yarn(não mexer nesse arquivo) 
 Criado o diretório node_modules. Nele está o babel e todas as suas dependencias.(não mexer nesse diretório)
+
+O babel é uma biblioteca que deixa o projeto transparente independente do dispositivo
+que estiver acessando. Para isso é necessário mais uma instalação:
+yarn @babel/preset-env -D.
+
+Adicionado tbem o core e o loader
+yarn @babel/core -D.
+yarn babel-loader -D.
