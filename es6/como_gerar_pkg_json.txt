@@ -1,0 +1,22 @@
+para gerar o package json com as informações do pacote/projeto
+javascript no qual estou trabalhando foi necessário ter uma 
+versão atualizada de node/nvm/yarn. Depois que tinha a versão 
+atualizada do npm, no caso nvm, pude instalar o yarn.
+
+
+Após instalado o yarn, no terminal dentro do pacote, executar
+o comando yarn init. Com esse comando é iniciada a configuração
+de informações do pacote/projeto. Ao final dessa configuração 
+aparece o arquivo package.json com essas  informações.
+
+Nesse arquivo ficam também registradas todas as dependencias
+do projeto. Similar ao que acontece no django.
+
+Na mesma pasta node está p package.json adicionamos as bibliotecas necessárias:
+
+exemplo no terminal: yarn add @babel/cli -D (essse comando instala o babel /cli(comand line) 
+-D(somente para desenvolvimento)).
+
+
+Vai criar o yarn.lock - arquivo de cache do yarn(não mexer nesse arquivo) 
+Criado o diretório node_modules. Nele está o babel e todas as suas dependencias.(não mexer nesse diretório)
