@@ -1,8 +1,3 @@
-class Pessoa{
-    falar(){
-        console.log('Estou falando...');
-    }
-    comer(){
-        console.log('Estou comendo....');
-    }
-}
+import {soma} from './helper';
+
+console.log(soma(5, 8))
